@@ -1,12 +1,12 @@
 #ifndef DRAW_GUARD
 #define DRAW_GUARD
 
-
-typedef struct Color {
+typedef struct Color
+{
     int r;
     int g;
     int b;
-}Color;
+} Color;
 
 Color BLUE;
 Color GREEN;
@@ -14,7 +14,7 @@ Color RED;
 Color WHITE;
 Color BLACK;
 
-Color* COLORS[5];
+Color *COLORS[5];
 
 void drawFill(SDL_Renderer *renderer, Color *color);
 void drawRect(SDL_Renderer *renderer, SDL_FRect *rect, Color *color, int alpha);
