@@ -9,7 +9,7 @@ I had been using Pygame to create games in Python and I was curious how it worke
 
 ## How to Run it
 
-Run 'make' and then './output' or 'output' (for windows) in the folder after cloning.
+Run `make` and then `./output` or `output` (for windows) in the folder after cloning.
 
 
 ## Example of Streaming Sound in SDL3
