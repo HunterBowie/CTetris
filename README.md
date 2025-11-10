@@ -9,16 +9,7 @@ I had been using Pygame to create games in Python and I was curious how it worke
 
 ## How to Run it
 
-Run the following in the folder after cloning:
-
-> make
-
-
-> ./ouput
-
-or if you are on windows
-
-> output
+Run 'make' and then './output' or 'output' (for windows) in the folder after cloning.
 
 
 ## Example of Streaming Sound in SDL3
@@ -28,7 +19,7 @@ void playSound(App *app, char filePath[]){
 	SDL_AudioSpec spec;
 
 	if (SDL_LoadWAV(filePath, &spec, &app->wave_data, &app->wave_length) == false) {
-		printf("Could not setup audio window: %s\n", SDL_GetError());
+		SDL_Log("Could not setup audio window: %s\n", SDL_GetError());
 		return;
 	}
  
